@@ -17,6 +17,10 @@ class SecurityController extends AbstractController
         // if ($this->getUser()) {
         //     return $this->redirectToRoute('target_path');
         // }
+        if ($this->isGranted('IS_AUTHENTICATED_FULLY'))
+        {
+            return $this->redirectToRoute('main');
+        }
 
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
