@@ -10,6 +10,22 @@
        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
            <div class="container">
                <a class="navbar-brand" href="/">Question/Answer</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ 'app_login' }}">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ 'app_register' }}">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ 'app_logout' }}">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
            </div>
        </nav>
 
